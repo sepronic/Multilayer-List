@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: "Arial", sans-serif;
+}
+
+.main__menu, .secondary__menu, .sub__menu {
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main__menu a {
+    display: block;
+    padding: 10px 14px;
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.main__menu li:hover >a {
+    background-color: red;
+    color: white;
+}
+
+li  {
+    position: relative;
+    margin-bottom: -1px;
+}
+
+.main__menu .secondary__menu {
+    position: absolute;
+    top: 5px;
+    left: 170px;
+    z-index: 2;
+    display: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+}
+
+.main__menu > li:hover .secondary__menu {
+    display: block;
+}
+
+.secondary__menu li:hover > a {
+    background-color: green;
+    color: #fff;
+}
+
+.secondary__menu .sub__menu {
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    z-index: 3;
+    display: none;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: grey;
+    background-color: #fff;
+}
+
+.secondary__menu > li:hover .sub__menu {
+    display: block;
+}
+
+.sub__menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 14px;
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.sub__menu > li:hover a {
+    color: white;
+    background-color: blue;
+}
+
